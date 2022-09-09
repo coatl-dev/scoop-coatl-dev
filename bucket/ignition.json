@@ -6,6 +6,7 @@
         "identifier": "Propietary",
         "url": "https://inductiveautomation.com/ignition/license"
     },
+    "notes": "Run 'start-ignition' or 'stop-ignition' on your terminal to start and stop the Ignition service.",
     "url": "https://files.inductiveautomation.com/release/ia/8.1.20/20220823-1339/Ignition-windows-x86-64-8.1.20.zip",
     "hash": "e482280c6267e9945d9b39c7355a0c2235632dcf647b3be04da39be93ff77580",
     "post_install": [
