@@ -7,7 +7,7 @@
         "url": "https://inductiveautomation.com/ignition/license"
     },
     "notes": [
-        "If this is a version upgrade from 8.1.x to 8.2.x, run 'upgrade-ignition.bat' inside",
+        "If this is a version upgrade from 8.1.x to 8.2.x, run 'run-upgrader.bat' inside",
         "$dir before you start Ignition by running",
         "'start-ignition' on your terminal. To stop the Ignition service you may run",
         "'stop-ignition'."
