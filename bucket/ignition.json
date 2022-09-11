@@ -6,17 +6,15 @@
         "identifier": "Propietary",
         "url": "https://inductiveautomation.com/ignition/license"
     },
-    "notes": [
-        "If this is a version upgrade from 8.1.x to 8.2.x, run 'run-upgrader.bat' inside",
-        "$dir before you start Ignition by running",
-        "'start-ignition' on your terminal. To stop the Ignition service you may run",
-        "'stop-ignition'."
-    ],
     "url": "https://files.inductiveautomation.com/release/ia/8.1.20/20220823-1339/Ignition-windows-x86-64-8.1.20.zip",
     "hash": "e482280c6267e9945d9b39c7355a0c2235632dcf647b3be04da39be93ff77580",
     "post_install": [
         "# Install Ignition",
-        "cmd.exe /c \"$dir\\install-ignition.bat\""
+        "cmd.exe /c \"$dir\\install-ignition.bat\"",
+        "# Run upgrader",
+        "cd \"$dir\" ; cmd.exe /c run-upgrader.bat",
+        "# Start Ignition",
+        "cmd.exe /c \"$dir\\start-ignition.bat\""
     ],
     "uninstaller": {
         "script": [
