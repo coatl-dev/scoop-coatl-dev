@@ -35,5 +35,9 @@
     "persist": [
         "data",
         "logs"
-    ]
+    ],
+    "checkver": {
+        "url": "https://inductiveautomation.com/downloads/ignition/",
+        "regex": "\"version\":\\s*\"(\\d+(:?\\.\\d+)*)\""
+    }
 }
