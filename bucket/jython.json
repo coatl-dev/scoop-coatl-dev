@@ -12,5 +12,10 @@
         [
             "bin\\jython.exe"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://search.maven.org/remotecontent?filepath=org/python/jython-installer/",
+        "regex": "href=\"([\\d.]+)/",
+        "reverse": true
+    }
 }
