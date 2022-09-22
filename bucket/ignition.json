@@ -12,7 +12,7 @@
         "# Install Ignition",
         "cmd.exe /c \"$dir\\install-ignition.bat\"",
         "# Run upgrader",
-        "cd \"$dir\" ; cmd.exe /c run-upgrader.bat",
+        "Set-Location \"$dir\" ; cmd.exe /c run-upgrader.bat",
         "# Start Ignition",
         "cmd.exe /c \"$dir\\start-ignition.bat\""
     ],
