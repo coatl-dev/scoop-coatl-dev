@@ -6,8 +6,8 @@
         "identifier": "Propietary",
         "url": "https://inductiveautomation.com/ignition/license"
     },
-    "url": "https://files.inductiveautomation.com/release/ia/8.1.22/20221101-1006/Ignition-macOs-x86-64-8.1.22.zip",
-    "hash": "352cae52f8c0b3298cb59d2efef8134cd0d1ab3d2bf613d9644c30dae54d0c80",
+    "url": "https://files.inductiveautomation.com/release/ia/8.1.22/20221101-1006/Ignition-windows-x86-64-8.1.22.zip",
+    "hash": "c85053dc9d6959b7ace8137861a0df3eeeedfea47705a6bc10d3ff1478e37bd9",
     "post_install": [
         "# Install Ignition",
         "cmd.exe /c \"$dir\\install-ignition.bat\"",
