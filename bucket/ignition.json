@@ -1,13 +1,13 @@
 {
-    "version": "8.1.22",
+    "version": "8.1.23",
     "description": "Unlimited Platform for SCADA and so much more",
     "homepage": "https://inductiveautomation.com/",
     "license": {
         "identifier": "Propietary",
         "url": "https://inductiveautomation.com/ignition/license"
     },
-    "url": "https://files.inductiveautomation.com/release/ia/8.1.22/20221101-1006/Ignition-windows-x86-64-8.1.22.zip",
-    "hash": "c85053dc9d6959b7ace8137861a0df3eeeedfea47705a6bc10d3ff1478e37bd9",
+    "url": "https://files.inductiveautomation.com/release/ia/8.1.23/20221213-0907/Ignition-windows-x86-64-8.1.23.zip",
+    "hash": "4ff32c098e182bb3787e4fd61fdb37943a87f8879e7decdf733bb9e75c33a955",
     "post_install": [
         "# Install Ignition",
         "cmd.exe /c \"$dir\\install-ignition.bat\"",
