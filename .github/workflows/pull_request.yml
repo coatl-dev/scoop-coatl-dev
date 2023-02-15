@@ -1,6 +1,5 @@
 on:
   pull_request:
-    types: [ opened ]
 name: Pull Requests
 jobs:
   pullRequestHandler:
@@ -8,6 +7,10 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Scoop config
+      shell: pwsh
+      run: |
+        Get-Content ~\.config\scoop\config.json
     - name: PullRequestHandler
       uses: ScoopInstaller/GithubActions@main
       env:
