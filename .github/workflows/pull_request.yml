@@ -14,7 +14,7 @@ jobs:
         $scoopConfigFile = "$env:USERPROFILE\.config\scoop\config.json"
         $currentDate = Get-Date -Format "o"
         $scoopConfig = "{`"private_hosts`":[{`"match`":`"https://files.inductiveautomation.com/*`",`"headers`":`"Referer=https://inductiveautomation.com/`"}],`"last_update`":`"$currentDate`",`"scoop_branch`":`"master`",`"scoop_repo`":`"https://github.com/ScoopInstaller/Scoop`"}"
-        New-Item $scoopConfigFile -ItemType file
+        New-Item $scoopConfigFile -ItemType File
         $scoopConfig | ConvertFrom-Json | ConvertTo-Json -Depth 100 | Set-Content $scoopConfigFile
         Get-Content $scoopConfigFile
     - name: PullRequestHandler
