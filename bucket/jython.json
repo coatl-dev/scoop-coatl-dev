@@ -17,5 +17,8 @@
         "url": "https://search.maven.org/remotecontent?filepath=org/python/jython-installer/",
         "regex": "href=\"([\\d.]+)/",
         "reverse": true
+    },
+    "autoupdate": {
+        "url": "https://search.maven.org/remotecontent?filepath=org/python/jython-installer/$version/jython-installer-$version.jar#/dl.7z"
     }
 }
