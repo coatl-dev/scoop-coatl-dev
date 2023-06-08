@@ -101,7 +101,9 @@
         "Scripts",
         "Lib\\site-packages"
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/coatl-dev/cpython"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
