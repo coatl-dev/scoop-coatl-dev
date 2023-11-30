@@ -1,6 +1,6 @@
 # coatl.dev Scoop bucket
 
-[![ci](https://github.com/coatl-dev/scoop-coatl-dev/actions/workflows/ci.yml/badge.svg)](https://github.com/coatl-dev/scoop-coatl-dev/actions/workflows/ci.yml)
+[![Tests](https://github.com/coatl-dev/scoop-coatl-dev/actions/workflows/ci.yml/badge.svg)](https://github.com/coatl-dev/scoop-coatl-dev/actions/workflows/ci.yml)
 
 Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
