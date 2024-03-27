@@ -77,6 +77,18 @@
     "bin": [
         [
             "python.exe",
+            "coatl"
+        ],
+        [
+            "python.exe",
+            "coatl3"
+        ],
+        [
+            "python.exe",
+            "coatl310"
+        ],
+        [
+            "python.exe",
             "python310"
         ],
         [
