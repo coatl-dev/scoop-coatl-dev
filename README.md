@@ -69,7 +69,7 @@ scoop uninstall --purge ignition
 
 ### `jython`
 
-Since `jython` depends on Java, we recommend `java/zulu11-jre`, which can be installed by...
+Since `jython` depends on Java, we recommend `java/zulu17-jre`, which can be installed by...
 
 Adding the `java` bucket:
 
@@ -80,7 +80,7 @@ scoop bucket add java
 Then:
 
 ```powershell
-scoop install zulu11-jre
+scoop install zulu17-jre
 ```
 
 And finally:
@@ -97,7 +97,8 @@ scoop uninstall jython
 
 ## How do I contribute new manifests?
 
-To make a new manifest contribution, please read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md).
+To make a new manifest contribution, please read the [Contributing Guide].
 
-[referer]: https://learn.microsoft.com/en-us/dotnet/api/system.net.httpwebrequest.referer
+[Contributing Guide]: https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md
 [PEP 619]: https://www.python.org/dev/peps/pep-0619/
+[referer]: https://learn.microsoft.com/en-us/dotnet/api/system.net.httpwebrequest.referer
