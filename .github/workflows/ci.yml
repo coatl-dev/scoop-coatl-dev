@@ -1,8 +1,10 @@
 name: Tests
 
 on:
-  pull_request:
   push:
+    branches:
+      - 'coatl'
+  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -14,17 +16,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
-          path: 'my_bucket'
+          path: my_bucket
       - name: Checkout Scoop
         uses: actions/checkout@v4
         with:
           repository: ScoopInstaller/Scoop
-          path: 'scoop_core'
-      - name: Init and Test
+          path: scoop_core
+      - name: Init Test Suite
+        uses: potatoqualitee/psmodulecache@main
+        with:
+          modules-to-cache: BuildHelpers
+          shell: powershell
+      - name: Test Bucket
         shell: powershell
         run: |
-          $env:SCOOP_HOME="$(Resolve-Path '.\scoop_core')"
-          .\scoop_core\test\bin\init.ps1
+          $env:SCOOP_HOME="$(Convert-Path '.\scoop_core')"
           .\my_bucket\bin\test.ps1
   test_pwsh:
     name: PowerShell
@@ -34,15 +40,19 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
-          path: 'my_bucket'
+          path: my_bucket
       - name: Checkout Scoop
         uses: actions/checkout@v4
         with:
           repository: ScoopInstaller/Scoop
-          path: 'scoop_core'
-      - name: Init and Test
+          path: scoop_core
+      - name: Init Test Suite
+        uses: potatoqualitee/psmodulecache@main
+        with:
+          modules-to-cache: BuildHelpers
+          shell: pwsh
+      - name: Test Bucket
         shell: pwsh
         run: |
-          $env:SCOOP_HOME="$(Resolve-Path '.\scoop_core')"
-          .\scoop_core\test\bin\init.ps1
+          $env:SCOOP_HOME="$(Convert-Path '.\scoop_core')"
           .\my_bucket\bin\test.ps1
