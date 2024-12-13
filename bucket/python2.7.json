@@ -68,5 +68,5 @@
         "if (test-path $registryPath) {",
         "    remove-item -path $registryPath -recurse",
         "}"
-    ],
+    ]
 }
