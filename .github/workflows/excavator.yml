@@ -9,6 +9,8 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.COATL_BOT_GH_TOKEN }}
     - name: Excavate
       uses: ScoopInstaller/GithubActions@main
       env:
