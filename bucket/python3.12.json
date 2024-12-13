@@ -96,9 +96,9 @@
         "} else {",
         "    $regBase = HKEY_CURRENT_USER",
         "}",
-        ",",
+        "",
         "$registryPath = \"Registry::$regBase\\Software\\Python\\PythonCore\\3.12\"",
-        ",",
+        "",
         "if (Test-Path $registryPath) {",
         "    Remove-Item -Path $registryPath -Recurse",
         "}"
