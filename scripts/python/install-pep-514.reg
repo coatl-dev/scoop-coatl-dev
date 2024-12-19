@@ -10,6 +10,9 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Python\PythonCore\$py_version\Help\Main Python Documentation]
 @="$py_root\\Doc\\html\\index.html"
 
+[HKEY_CURRENT_USER\SOFTWARE\Python\PythonCore\$py_version\Idle]
+@="$py_root\\Lib\\idlelib\\idle.pyw"
+
 [HKEY_CURRENT_USER\Software\Python\PythonCore\$py_version\InstallPath]
 @="$py_root"
 "ExecutablePath"="$py_root\\python.exe"
