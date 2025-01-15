@@ -10,13 +10,19 @@ jobs:
     - name: Create scoop config file
       shell: pwsh
       run: |
-        New-Item -ItemType Directory -Force $env:USERPROFILE\.config\scoop
-        $scoopConfigFile = "$env:USERPROFILE\.config\scoop\config.json"
-        $currentDate = Get-Date -Format "o"
-        $scoopConfig = "{`"private_hosts`":[{`"match`":`"https://files.inductiveautomation.com/*`",`"headers`":`"Referer=https://inductiveautomation.com/`"}],`"last_update`":`"$currentDate`",`"scoop_branch`":`"master`",`"scoop_repo`":`"https://github.com/ScoopInstaller/Scoop`"}"
-        New-Item $scoopConfigFile -ItemType File
-        $scoopConfig | ConvertFrom-Json | ConvertTo-Json -Depth 100 | Set-Content $scoopConfigFile
-        Get-Content $scoopConfigFile
+        $configPath = Join-Path $env:USERPROFILE ".config\scoop"
+        $configFile = Join-Path $configPath "config.json"
+        $null = New-Item -ItemType Directory -Path $configPath -Force
+        @{
+          private_hosts = @(@{
+            match   = "https://files.inductiveautomation.com/*"
+            headers = "Referer=https://inductiveautomation.com/"
+          })
+          last_update = (Get-Date -Format "o")
+          scoop_branch = "master"
+          scoop_repo   = "https://github.com/ScoopInstaller/Scoop"
+        } | ConvertTo-Json -Depth 10 | Set-Content -Path $configFile
+        Get-Content $configFile
     - name: PullRequestHandler
       uses: ScoopInstaller/GithubActions@main
       env:
