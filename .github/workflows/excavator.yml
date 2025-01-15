@@ -1,7 +1,7 @@
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 15 10 2-12/2 *'
+    - cron: '0 15 1/9 * *'
 name: Excavator
 jobs:
   excavate:
@@ -11,6 +11,22 @@ jobs:
     - uses: actions/checkout@v4
       with:
         token: ${{ secrets.COATL_BOT_GH_TOKEN }}
+    - name: Create scoop config file
+      shell: pwsh
+      run: |
+        $configPath = Join-Path $env:USERPROFILE ".config\scoop"
+        $configFile = Join-Path $configPath "config.json"
+        $null = New-Item -ItemType Directory -Path $configPath -Force
+        @{
+          private_hosts = @(@{
+            match   = "https://files.inductiveautomation.com/*"
+            headers = "Referer=https://inductiveautomation.com/"
+          })
+          last_update = (Get-Date -Format "o")
+          scoop_branch = "master"
+          scoop_repo   = "https://github.com/ScoopInstaller/Scoop"
+        } | ConvertTo-Json -Depth 10 | Set-Content -Path $configFile
+        Get-Content $configFile
     - name: Excavate
       uses: ScoopInstaller/GithubActions@main
       env:
