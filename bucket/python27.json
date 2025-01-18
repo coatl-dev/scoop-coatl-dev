@@ -40,9 +40,9 @@
         "        $regBase = \"Registry::HKEY_CURRENT_USER\\Software\"",
         "    }",
         "",
-        "    new-item -path \"$regBase\\$path\" -force | out-null",
-        "    new-itemproperty -path \"$regBase\\$path\" `",
-        "        -name \"(Default)\" -value \"$value\" -force | out-null",
+        "    New-Item -Path \"$regBase\\$path\" -Force | Out-Null",
+        "    New-ItemProperty -Path \"$regBase\\$path\" `",
+        "        -Name \"(Default)\" -Value \"$value\" -Force | Out-Null",
         "}",
         "",
         "$py_cleanVersion = $version -replace '\\.'",
@@ -65,8 +65,12 @@
         "",
         "$registryPath = \"Registry::$regBase\\Software\\Python\\PythonCore\\2.7\"",
         "",
-        "if (test-path $registryPath) {",
-        "    remove-item -path $registryPath -recurse",
+        "if (Test-Path $registryPath) {",
+        "    Remove-Item -Path $registryPath -Recurse",
         "}"
-    ]
+    ],
+    "checkver": {
+        "url": "https://www.python.org/downloads/windows/",
+        "regex": "python-(2\\.[\\d.]+\\.[\\d.]+)-"
+    },
 }
