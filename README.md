@@ -9,7 +9,7 @@ coatl-dev's bucket for [Scoop](https://scoop.sh), the Windows command-line insta
 To add this bucket, run:
 
 ```powershell
-scoop bucket add scoop-coatl-dev https://github.com/coatl-dev/scoop-coatl-dev
+scoop bucket add coatl-dev https://github.com/coatl-dev/scoop-coatl-dev
 ```
 
 ### `ignition`
@@ -76,15 +76,15 @@ scoop uninstall jython
 ### Python
 
 ```powershell
-scoop install scoop-coatl-dev/python27
+scoop install coatl-dev/python27
 ```
 
 ```powershell
-scoop install scoop-coatl-dev/python312
+scoop install coatl-dev/python312
 ```
 
 ```powershell
-scoop install scoop-coatl-dev/python313
+scoop install coatl-dev/python313
 ```
 
 ## How do I contribute new manifests?
