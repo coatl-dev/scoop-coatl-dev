@@ -36,7 +36,7 @@ section:
 Finally:
 
 ```powershell
-scoop install scoop-coatl-dev/ignition
+scoop install coatl-dev/ignition
 ```
 
 To uninstall:
@@ -64,7 +64,7 @@ scoop install zulu17-jre
 And finally:
 
 ```powershell
-scoop install scoop-coatl-dev/jython
+scoop install coatl-dev/jython
 ```
 
 To uninstall:
