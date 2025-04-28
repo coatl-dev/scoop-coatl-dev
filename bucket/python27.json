@@ -72,5 +72,5 @@
     "checkver": {
         "url": "https://www.python.org/downloads/windows/",
         "regex": "python-(2\\.[\\d.]+\\.[\\d.]+)-"
-    },
+    }
 }
