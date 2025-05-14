@@ -12,7 +12,7 @@
                 "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "e1ad62752767f8c6e1b7b4be1ba3a072cab9fb4335cef8f3fa373af9f333863f",
+                "a19319acc0d666186b9a786e8a2904dd6545fb479cd9c2456a2d186014d88251",
                 "8dc7b951b12b03d6949a09cff7ce0f57cf5eb125aa590fccac500f2f75212ef0",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
@@ -24,7 +24,19 @@
                 "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "492dd2fdcbbeabf2592c19be54dd486490c984ea705cf64589263432e46f5fe4",
+                "3ef4c7fb7e1b8d9af637b4a423635b273cb07f32b008e3125dc8b08cb73cb602",
+                "8dc7b951b12b03d6949a09cff7ce0f57cf5eb125aa590fccac500f2f75212ef0",
+                "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
+            ]
+        },
+        "arm64": {
+            "url": [
+                "https://github.com/coatl-dev/python3.12/releases/download/3.12.10/python-3.12.10-arm64.exe#/setup.exe",
+                "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/install-pep-514.reg",
+                "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/uninstall-pep-514.reg"
+            ],
+            "hash": [
+                "f6a23a662d43c8ccd71092dc8cb6250e0c71bd93cab1d3bcdd8cf6932658626b",
                 "8dc7b951b12b03d6949a09cff7ce0f57cf5eb125aa590fccac500f2f75212ef0",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
@@ -124,6 +136,9 @@
             },
             "32bit": {
                 "url": "https://github.com/coatl-dev/python3.12/releases/download/$version/python-$version.exe#/setup.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/coatl-dev/python3.12/releases/download/$version/python-$version-arm64.exe#/setup.exe"
             }
         }
     }
