@@ -12,12 +12,12 @@ To add this bucket, run:
 scoop bucket add coatl-dev https://github.com/coatl-dev/scoop-coatl-dev
 ```
 
-### `ignition`
+### `ignition`/`ignition83`
 
-To be able to download the `ignition` ZIP installer we must set a [referer],
-so first we must edit our `scoop`'s `config.json`, which is typically found at
-`%USERPROFILE%\.config\scoop\config.json`, and add or edit the `private_hosts`
-section:
+To be able to download the `ignition` or `ignition83` ZIP installer we must set
+a [referer], so first we must edit our `scoop`'s `config.json`, which is
+typically found at `%USERPROFILE%\.config\scoop\config.json`, and add or edit
+the `private_hosts` section:
 
 ```json
 {
@@ -33,16 +33,28 @@ section:
 }
 ```
 
-Finally:
+To install:
 
 ```powershell
 scoop install coatl-dev/ignition
+```
+
+Or
+
+```powershell
+scoop install coatl-dev/ignition83
 ```
 
 To uninstall:
 
 ```powershell
 scoop uninstall --purge ignition
+```
+
+Or
+
+```powershell
+scoop uninstall --purge ignition83
 ```
 
 ### `jython`
