@@ -8,7 +8,7 @@ jobs:
     name: Excavate
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         token: ${{ secrets.COATL_BOT_GH_TOKEN }}
     - name: Create scoop config file
