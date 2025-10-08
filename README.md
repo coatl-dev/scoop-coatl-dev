@@ -99,6 +99,10 @@ scoop install coatl-dev/python312
 scoop install coatl-dev/python313
 ```
 
+```powershell
+scoop install coatl-dev/python314
+```
+
 ## How do I contribute new manifests?
 
 To make a new manifest contribution, please read the [Contributing Guide].
