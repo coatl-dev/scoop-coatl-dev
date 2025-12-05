@@ -1,5 +1,5 @@
 {
-    "version": "3.13.10",
+    "version": "3.13.11",
     "description": "A programming language that lets you work quickly and integrate systems more effectively.",
     "homepage": "https://www.python.org/",
     "license": "Python-2.0",
@@ -7,36 +7,36 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://www.python.org/ftp/python/3.13.10/python-3.13.10-amd64.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.13.11/python-3.13.11-amd64.exe#/setup.exe",
                 "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "md5:28481b8956f67a6a3daac96cd139a67a",
+                "md5:379a32861f9f0a327f9fa9c163455574",
                 "8dc7b951b12b03d6949a09cff7ce0f57cf5eb125aa590fccac500f2f75212ef0",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
         },
         "32bit": {
             "url": [
-                "https://www.python.org/ftp/python/3.13.10/python-3.13.10.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.13.11/python-3.13.11.exe#/setup.exe",
                 "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "md5:fdebce36bfdd4f341d6b2bde84d66478",
+                "md5:41c1b631ed8db2d12f1c484e4a040984",
                 "8dc7b951b12b03d6949a09cff7ce0f57cf5eb125aa590fccac500f2f75212ef0",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
         },
         "arm64": {
             "url": [
-                "https://www.python.org/ftp/python/3.13.10/python-3.13.10-arm64.exe#/setup.exe",
+                "https://www.python.org/ftp/python/3.13.11/python-3.13.11-arm64.exe#/setup.exe",
                 "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/install-pep-514.reg",
                 "https://raw.githubusercontent.com/coatl-dev/scoop-coatl-dev/coatl/scripts/python/uninstall-pep-514.reg"
             ],
             "hash": [
-                "md5:7d766ba811012552be75248f20af71a3",
+                "md5:6058e2f1312b89b4355d56611207a77e",
                 "8dc7b951b12b03d6949a09cff7ce0f57cf5eb125aa590fccac500f2f75212ef0",
                 "65a46d5a9fec455b6fbc5d75f8a57cd5ee958d31873ef438766866a53759e9f6"
             ]
