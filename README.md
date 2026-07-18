@@ -26,7 +26,7 @@ the `private_hosts` section:
   "SCOOP_BRANCH": "master",
   "private_hosts": [
     {
-      "match": "https://files.inductiveautomation.com/*",
+      "match": "https://releases.inductiveautomation.com/*",
       "headers": "Referer=https://inductiveautomation.com/"
     }
   ]

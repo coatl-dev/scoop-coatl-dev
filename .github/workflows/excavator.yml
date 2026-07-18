@@ -19,7 +19,7 @@ jobs:
         $null = New-Item -ItemType Directory -Path $configPath -Force
         @{
           private_hosts = @(@{
-            match   = "https://files.inductiveautomation.com/*"
+            match   = "https://releases.inductiveautomation.com/*"
             headers = "Referer=https://inductiveautomation.com/"
           })
           last_update = (Get-Date -Format "o")
