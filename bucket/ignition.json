@@ -40,7 +40,7 @@
         "logs"
     ],
     "checkver": {
-        "url": "https://inductiveautomation.com/downloads/",
+        "url": "https://inductiveautomation.com/downloads/ignition/",
         "regex": "(\\d+\\.\\d+\\.\\d+)\\/(\\d{8})\\\\u002D(\\d{4})"
     },
     "autoupdate": {
