@@ -139,8 +139,9 @@
         "}"
     ],
     "checkver": {
-        "url": "https://www.python.org/downloads/windows/",
-        "regex": "python-(3\\.14\\.[\\d.]+)-"
+        "url": "https://www.python.org/ftp/python/",
+        "script": "[regex]::Matches($page, '3\\.14\\.\\d+/') | ForEach-Object { $_.Value } | Sort-Object { [version]$_.TrimEnd('/') } | Select-Object -Last 1",
+        "regex": "(3\\.14\\.\\d+)"
     },
     "autoupdate": {
         "architecture": {

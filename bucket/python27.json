@@ -70,7 +70,8 @@
         "}"
     ],
     "checkver": {
-        "url": "https://www.python.org/downloads/windows/",
-        "regex": "python-(2\\.[\\d.]+\\.[\\d.]+)-"
+        "url": "https://www.python.org/ftp/python/",
+        "script": "[regex]::Matches($page, '2\\.7\\.\\d+/') | ForEach-Object { $_.Value } | Sort-Object { [version]$_.TrimEnd('/') } | Select-Object -Last 1",
+        "regex": "(2\\.7\\.\\d+)"
     }
 }
